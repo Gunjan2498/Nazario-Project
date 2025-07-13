@@ -1,0 +1,550 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nazario</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- Sign In Section -->
+    <!-- <div class="overlay" id="popup" style="display: flex;">
+        <div class="popup-form">
+            <span class="close-btn" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+            <h2>Create Your Account</h2>
+            <p class="subtitle">Sign up to get started!</p>
+
+            <form>
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username" required>
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Create a password" required>
+
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm your password" required>
+
+                <label class="checkbox">
+                    <input type="checkbox" required> I agree to the <a href="#">terms and conditions</a>
+                </label>
+
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+
+            <p class="signin-text">Already have an account? <a href="#">Sign In</a></p>
+        </div>
+    </div> -->
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">NAZARIO</div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li class="close-icon">
+                <a href="#" id="close-menu"><i class="fas fa-times"></i></a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="#">Collection</a></li>
+            <li class="hide-on-mobile"><a href="#"><i class="fas fa-search"></i></a></li>
+            <li class="hide-on-mobile"><a href="#"><i class="far fa-heart"></i></a></li>
+            <li class="hide-on-mobile"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="far fa-user"></i></a></li>
+        </ul>
+
+        <!-- Mobile Icons + Hamburger -->
+        <div id="mobile">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h4>Trade In, Trade Up</h4>
+            <h2>Modern Eyes,</h2>
+            <h1>Classic Soul</h1>
+            <p>Limited-release styles available now</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Feature -->
+    <section id="feature" class="section-p1">
+        <h4>EXPLORE YOUR STYLE</h4>
+        <h2>FIND THE PERFECT EYEWEAR FOR EVERY OCCASION</h2>
+
+        <div class="feature-container">
+            <div class="box1">
+                <img src="./10Sunglass.jpg" alt="Sunglasses">
+                <h6>Sunglasses</h6>
+            </div>
+            <div class="box1">
+                <img src="./5Eyeglass.jpg" alt="Eyeglasses">
+                <h6>Eyeglasses</h6>
+            </div>
+            <div class="box1">
+                <img src="./6Blue glass.jpg" alt="Computer Glasses">
+                <h6>Computer Glasses</h6>
+            </div>
+            <div class="box1">
+                <img src="./8Reading Glasses.jpg" alt="Reading Glasses">
+                <h6>Reading Glasses</h6>
+            </div>
+            <div class="box1">
+                <img src="./9Lens.jpg" alt="Contact Lenses">
+                <h6>Contact Lenses</h6>
+            </div>
+            <div class="box1">
+                <img src="./7accessories.jpg" alt="Accessories">
+                <h6>Accessories</h6>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Collection -->
+    <section id="collection">
+        <h2>Featured Collection</h2>
+        <h4>Explore our best Products</h4>
+
+        <div id="collection-row">
+            <!-- Product Card -->
+            <div class="pro">
+                <div class="badge">25% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./11.jpg" alt="Product 1">
+                <div class="description">
+                    <span>Ray-Ban</span>
+                    <h5>Gradiant Eyeglasses</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 4.0
+                    </div>
+                    <h4>₹1,125 <del style="color: gray; font-weight: 400;">₹1,500</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">10% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./12.jpeg" alt="Product 2">
+                <div class="description">
+                    <span>Titan</span>
+                    <h5>Modern Classic Specs</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> 4.8
+                    </div>
+                    <h4>₹6,300 <del style="color: gray; font-weight: 400;">₹7,000</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">20% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./13.jpeg" alt="Product 3">
+                <div class="description">
+                    <span>Vincent Chase</span>
+                    <h5>Classic Air Flex Eyeglass</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> 3.5
+                    </div>
+                    <h4>₹1,200 <del style="color: gray; font-weight: 400;">₹1,500</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">25% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./14.jpeg" alt="Product 4">
+                <div class="description">
+                    <span>Vincent Chase</span>
+                    <h5>Gold Full Rim Geometric</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i> 4.8
+                    </div>
+                    <h4>₹1,500 <del style="color: gray; font-weight: 400;">₹2,000</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">25% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./15.jpeg" alt="Product 5">
+                <div class="description">
+                    <span>Ray-Ban</span>
+                    <h5>Black Full Rim Round</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 4.0
+                    </div>
+                    <h4>₹1,500 <del style="color: gray; font-weight: 400;">₹2,000</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">13% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./16.jpg" alt="Product 6">
+                <div class="description">
+                    <span>John Jacobs</span>
+                    <h5>Transparent Full Rim Round</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i> 4.8
+                    </div>
+                    <h4>₹3,500 <del style="color: gray; font-weight: 400;">₹4,000</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">25% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./17.jpg" alt="Product 7">
+                <div class="description">
+                    <span>Vincent Chase</span>
+                    <h5>Golden Full Rim Round</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> 4.3
+                    </div>
+                    <h4>₹1,500 <del style="color: gray; font-weight: 400;">₹2,000</del></h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="badge">60% off</div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./18.jpg" alt="Product 8">
+                <div class="description">
+                    <span>John Jacobs</span>
+                    <h5>Dark Brown Full Rim Cat Eye</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> 3.5
+                    </div>
+                    <h4>₹800 <del style="color: gray; font-weight: 400;">₹2,000</del></h4>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- <section id="banner"><h4> -->
+    <!-- Offer Banner -->
+    <section id="offer">
+        <div class="offer-container">
+            <div class="offer-img">
+                <img src="./18.jpg" alt="Eyewear Offer">
+            </div>
+            <div class="offer-content">
+                <p>Limited Time Offer</p>
+                <h2>25% Off All Eyewear Styles – Limited Time!</h2>
+                <p class="subtext">
+                    Upgrade your look with our latest collection of specs. Classic frames, modern comfort — grab them
+                    before they’re gone.
+                </p>
+                <a href="#" class="offer-btn">Shop Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals">
+        <h2>New Arrivals</h2>
+        <h4 style="color: rgb(55, 54, 52);">Check out our latest eyewear</h4>
+
+        <div class="slider-wrapper">
+            <button class="arrow left" onclick="scrollLeft()"><i class="fas fa-chevron-left"></i></button>
+
+            <div id="product-slider">
+
+                <div class="pro">
+                    <div class="badge">New</div>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-expand"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <img src="./20.jpeg" alt="Product 1">
+                    <div class="description">
+                        <span>Ray-Ban</span>
+                        <h5>Gradient Square Eyeglasses</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 4.0
+                        </div>
+                        <h4>₹799</h4>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="badge">New</div>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-expand"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <img src="./21.jpg" alt="Product 2">
+                    <div class="description">
+                        <span>Titan</span>
+                        <h5>Bold Classic Rectangle Specs</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 3.0
+                        </div>
+                        <h4>₹849</h4>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="badge">New</div>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-expand"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <img src="./22.jpeg" alt="Product 3">
+                    <div class="description">
+                        <span>Vincent Chase</span>
+                        <h5>Geometric Gold Full Rim</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i> 4.8
+                        </div>
+                        <h4>₹1,499</h4>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <div class="badge">New</div>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-expand"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <img src="./23.jpg" alt="Product 4">
+                    <div class="description">
+                        <span>John Jacobs</span>
+                        <h5>Matte Brown Cat Eye</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> 4.2
+                        </div>
+                        <h4>₹1,999</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow right" onclick="scrollRight()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <div>
+                <p class="section-subtitle">Testimonial</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonial-arrows">
+                <button class="arrow-btn left">←</button>
+                <button class="arrow-btn right">→</button>
+            </div>
+        </div>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box">
+                <div class="testimonial-image">
+                    <img src="./19.jpg" alt="Client Photo" />
+                    <div class="quote-icon">“</div>
+                </div>
+
+                <div class="testimonial-content">
+                    <div class="stars">
+                        ★ ★ ★ ★ ★ <span>5.0</span>
+                    </div>
+                    <p class="testimonial-text">
+                        I recently bought a pair of specs from this site and I must say, the quality and comfort are
+                        absolutely top-notch. Delivery was quick and the design options are perfect for both office and
+                        casual wear.
+                    </p>
+                    <p class="testimonial-author">
+                        <strong>Ritika Sharma</strong><br><span>Marketing Executive, Pune</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="features">
+        <div class="feature-box">
+            <img src="./4Shipping.jpg" alt="Free Shipping">
+            <div>
+                <h4>Free Shipping</h4>
+                <p>Free shipping for order above $180</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <img src="./3payment.jpg" alt="Flexible Payment">
+            <div>
+                <h4>Flexible Payment</h4>
+                <p>Multiple secure payment options</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <img src="./2_24by7.jpg" alt="24x7 Support">
+            <div>
+                <h4>24x7 Support</h4>
+                <p>We support online all days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="nazario-footer">
+        <div class="footer-top">
+            <div class="footer-col brand">
+                <h2><span class="logo-circle">N</span> Nazario</h2>
+                <p>Premium eyewear crafted for clarity, comfort, and confidence. Discover frames that define you.</p>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li>About Nazario</li>
+                    <li>Shop</li>
+                    <li>Your Cart</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Your Account</li>
+                    <li>Order Status</li>
+                    <li>Returns</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li>Shipping & Delivery</li>
+                    <li>Return Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>+91 98765 43210</li>
+                    <li>support@nazario.in</li>
+                    <li>202, Vision Plaza, Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>© 2025 Nazario Eyewear. All Rights Reserved.</p>
+            <div class="footer-selects">
+                <select>
+                    <option>English</option>
+                </select>
+                <select>
+                    <option>INR</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

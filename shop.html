@@ -1,0 +1,278 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nazario</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="form.css">
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">NAZARIO</div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li class="close-icon">
+                <a href="#" id="close-menu"><i class="fas fa-times"></i></a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="#">Collection</a></li>
+            <li class="hide-on-mobile"><a href="#"><i class="fas fa-search"></i></a></li>
+            <li class="hide-on-mobile"><a href="#"><i class="far fa-heart"></i></a></li>
+            <li class="hide-on-mobile"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="far fa-user"></i></a></li>
+        </ul>
+
+        <!-- Mobile Icons + Hamburger -->
+        <div id="mobile">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <main class="container">
+        <!-- FILTER SIDEBAR -->
+        <aside class="filters">
+            <div class="filters-header">
+                <h2>Filters</h2>
+                <a href="#" class="reset-link">Reset</a>
+            </div>
+
+            <details class="filter-section">
+                <summary>Frame Style</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox" /> Aviator</label>
+                    <label><input type="checkbox" /> Cat Eye</label>
+                </div>
+            </details>
+
+            <details class="filter-section">
+                <summary>Frame Shape</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox" /> Round</label>
+                    <label><input type="checkbox" /> Square</label>
+                </div>
+            </details>
+
+            <details class="filter-section">
+                <summary>Frame Color</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox" /> Black</label>
+                    <label><input type="checkbox" /> Tortoise</label>
+                </div>
+            </details>
+
+            <details class="filter-section">
+                <summary>Price</summary>
+                <div class="filter-content">
+                    <input type="range" min="0" max="200" value="100" />
+                    <p>$0 - $200</p>
+                </div>
+            </details>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <section class="products">
+            <div class="top-bar">
+                <p>Showing 1–12 of 240 results</p>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">25% off</span>
+                        <img src="./11.jpg" alt="Classic Aviator" />
+                    </div>
+                    <h3>Classic Aviator</h3>
+                    <p class="category">Ray-Ban</p>
+                    <p class="price">₹9,000 <span>₹12,000</span></p>
+                    <p class="rating">⭐ 4.8</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">25% off</span>
+                        <img src="./12.jpeg" alt="Blue Light Blockers" />
+                    </div>
+                    <h3>Blue Light Blockers</h3>
+                    <p class="category">Lenskart</p>
+                    <p class="price">₹3,750 <span>₹5,000</span></p>
+                    <p class="rating">⭐ 4.6</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">30% off</span>
+                        <img src="./13.jpeg" alt="Tortoise Shell Frames" />
+                    </div>
+                    <h3>Tortoise Shell Frames</h3>
+                    <p class="category">Warby Parker</p>
+                    <p class="price">₹6,300 <span>₹9,000</span></p>
+                    <p class="rating">⭐ 4.7</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">20% off</span>
+                        <img src="./14.jpeg" alt="Thin Metal Rims" />
+                    </div>
+                    <h3>Thin Metal Rims</h3>
+                    <p class="category">Titan Eye+</p>
+                    <p class="price">₹4,000 <span>₹5,000</span></p>
+                    <p class="rating">⭐ 4.5</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">25% off</span>
+                        <img src="./15.jpeg" alt="Smart Wayfarer" />
+                    </div>
+                    <h3>Smart Wayfarer</h3>
+                    <p class="category">Fastrack</p>
+                    <p class="price">₹2,250 <span>₹3,000</span></p>
+                    <p class="rating">⭐ 4.4</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">30% off</span>
+                        <img src="./16.jpg" alt="Retro Round Glasses" />
+                    </div>
+                    <h3>Retro Round Glasses</h3>
+                    <p class="category">John Jacobs</p>
+                    <p class="price">₹4,200 <span>₹6,000</span></p>
+                    <p class="rating">⭐ 4.9</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">20% off</span>
+                        <img src="./17.jpg" alt="Minimalist Clear Frame" />
+                    </div>
+                    <h3>Minimalist Clear Frame</h3>
+                    <p class="category">Vincent Chase</p>
+                    <p class="price">₹3,200 <span>₹4,000</span></p>
+                    <p class="rating">⭐ 4.6</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="badge green">40% off</span>
+                        <img src="./24.jpg" alt="Bold Cat Eye Frame" />
+                    </div>
+                    <h3>Bold Cat Eye Frame</h3>
+                    <p class="category">EyeMyEye</p>
+                    <p class="price">₹2,100 <span>₹3,500</span></p>
+                    <p class="rating">⭐ 4.7</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Support Section -->
+    <section class="features">
+        <div class="feature-box">
+            <img src="./4Shipping.jpg" alt="Free Shipping">
+            <div>
+                <h4>Free Shipping</h4>
+                <p>Free shipping for order above $180</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <img src="./3payment.jpg" alt="Flexible Payment">
+            <div>
+                <h4>Flexible Payment</h4>
+                <p>Multiple secure payment options</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <img src="./2_24by7.jpg" alt="24x7 Support">
+            <div>
+                <h4>24x7 Support</h4>
+                <p>We support online all days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="nazario-footer">
+        <div class="footer-top">
+            <div class="footer-col brand">
+                <h2><span class="logo-circle">N</span> Nazario</h2>
+                <p>Premium eyewear crafted for clarity, comfort, and confidence. Discover frames that define you.</p>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li>About Nazario</li>
+                    <li>Shop</li>
+                    <li>Your Cart</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Your Account</li>
+                    <li>Order Status</li>
+                    <li>Returns</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li>Shipping & Delivery</li>
+                    <li>Return Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>+91 98765 43210</li>
+                    <li>support@nazario.in</li>
+                    <li>202, Vision Plaza, Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>© 2025 Nazario Eyewear. All Rights Reserved.</p>
+            <div class="footer-selects">
+                <select>
+                    <option>English</option>
+                </select>
+                <select>
+                    <option>INR</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
